@@ -3,7 +3,7 @@ import type { NavItem, Portfolio } from './components/types'
 export const navItems: NavItem[] = [
   { id: 'home', label: 'Home' },
   { id: 'skills', label: 'Skills' },
-  { id: 'work', label: 'Work' },
+  { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
   { id: 'contact', label: 'Contact' },
 //   { id: 'education', label: 'Education' },
@@ -72,12 +72,12 @@ export const fallbackData: Portfolio = {
 }
 
 export const getCommandOutput = (portfolio: Portfolio): Record<string, string> => ({
-  help: 'available: about, skills, work, projects, contact, ls, whoami, theme green, theme mono, clear',
-  ls: 'about/  skills/  work/  projects/  contact/',
+  help: 'available: about, skills, experience, projects, contact, ls, whoami, theme green, theme mono, clear',
+  ls: 'about/  skills/  experience/  projects/  contact/',
   whoami: `${portfolio.name} - ${portfolio.role}`,
   about: 'opening /home/abhishek/about',
   skills: 'opening /home/abhishek/skills',
-  work: 'opening /home/abhishek/work',
+  experience: 'opening /home/abhishek/experience',
   projects: 'opening /home/abhishek/projects',
   contact: 'opening /home/abhishek/contact',
 })

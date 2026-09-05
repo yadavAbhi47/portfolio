@@ -64,7 +64,7 @@ function App() {
 
     setCommandOutput((current) => [...current, `$ ${nextCommand}`, output])
     setCommand('')
-    if (['home', 'skills', 'work', 'projects', 'contact'].includes(section)) {
+    if (['home', 'skills', 'experience', 'projects', 'contact'].includes(section)) {
       handleNavigate(section)
     }
   }
