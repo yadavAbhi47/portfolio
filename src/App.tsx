@@ -71,7 +71,7 @@ function App() {
 
   return (
     <div className="min-h-screen w-full bg-[var(--bg)] font-mono text-[var(--text)]" data-theme={theme}>
-      <Header theme={theme} onThemeChange={setTheme} onMenuToggle={() => setIsSidebarOpen((isOpen) => !isOpen)} />
+      <Header onMenuToggle={() => setIsSidebarOpen((isOpen) => !isOpen)} />
 
       <main className="mt-4 grid min-h-[calc(100vh-79px)] grid-cols-[240px_minmax(0,1fr)] bg-white/[0.01] max-lg:block">
         <Sidebar items={navItems} activeId={activeSection} onNavigate={handleNavigate} isOpen={isSidebarOpen} />

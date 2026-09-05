@@ -1,12 +1,10 @@
 import { Menu } from 'lucide-react'
 
 type HeaderProps = {
-  theme: 'mono' | 'green'
-  onThemeChange: (theme: 'mono' | 'green') => void
   onMenuToggle: () => void
 }
 
-export function Header({ theme, onThemeChange, onMenuToggle }: HeaderProps) {
+export function Header({ onMenuToggle }: HeaderProps) {
   return (
     <header className="relative mx-7 mt-[14px] flex min-h-[52px] items-center justify-between gap-4 rounded-[10px] border border-[var(--border)] bg-[#050505] px-3.5 py-2.5 font-mono text-[0.72rem] uppercase tracking-[0.12em] shadow-[inset_0_0_20px_rgba(255,255,255,0.015)] max-[820px]:mx-2">
       <div className="flex items-center gap-2.5">
