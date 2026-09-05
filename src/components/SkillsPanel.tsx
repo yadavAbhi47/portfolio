@@ -9,9 +9,9 @@ export function SkillsPanel({ skills }: { skills: SkillGroup[] }) {
         <span className="font-bold text-[var(--accent)]">abhishek@portfolio:~$</span>
         <span className="text-[var(--text)]">ls skills/</span>
       </div>
-      <div className="grid grid-cols-3 gap-4 max-[1100px]:grid-cols-2 max-[820px]:grid-cols-1">
+      <div className="grid grid-cols-4 gap-4 max-[1100px]:grid-cols-2 max-[820px]:grid-cols-1">
         {skills.map((group) => (
-          <div key={group.title} className="border border-white/[0.05] bg-white/[0.01] p-[14px_12px]">
+          <div key={group.title} className="rounded-[10px] border border-white/[0.05] bg-white/[0.01] p-[14px_12px]">
             <h3 className="mb-3 text-[0.9rem] uppercase tracking-[0.08em] text-[var(--text)] before:text-[var(--accent)] before:content-['$_']">{group.title}</h3>
             <ul className="grid gap-2.5 text-[0.92rem] text-[var(--muted)]">{group.items.map((item) => <li key={item}>{item}</li>)}</ul>
           </div>

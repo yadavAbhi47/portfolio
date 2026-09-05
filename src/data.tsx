@@ -55,16 +55,18 @@ export const fallbackData: Portfolio = {
   ],
   experience: [
     {
-      title: 'Full-Stack Software Engineer',
-      company: 'Product Engineering & Personal Projects',
-      period: '2024 — Present',
-      details: 'Delivered, integrated, tested, and troubleshot production-style web applications across frontend, backend, APIs, authentication, and deployment workflows.',
-    },
-    {
       title: 'Associate Software Engineer Trainee',
       company: 'Current Role',
-      period: '2026 — Present',
-      details: 'Working across the software development lifecycle in Agile delivery environments, contributing to Scrum ceremonies, Jira planning, Confluence documentation, backend systems, API design, database integration, and release-ready engineering practices.',
+      period: 'May, 2026 — Present',
+      details: [
+        'Automating manual business processes by developing web-based software solutions.',
+        'Building backend services and REST APIs using Node.js and Express.js.',
+        'Developing secure integration endpoints with appropriate authentication, authorization, validation, and access controls.',
+        'Designing and integrating PostgreSQL databases for application workflows and data persistence.',
+        'Developing React interfaces to support automated business workflows.',
+        'Contributing to API design, integration, testing, debugging, and production releases.',
+        'Working within Agile/Scrum practices using Jira and Confluence.',
+      ],
     },
   ],
 }

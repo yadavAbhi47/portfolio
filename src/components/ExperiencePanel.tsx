@@ -14,7 +14,9 @@ export function ExperiencePanel({ experience }: { experience: ExperienceItem[] }
             <span>{job.period}</span>
           </div>
           <em className="text-[var(--accent)] before:text-[var(--muted)] before:content-['@_']">{job.company}</em>
-          <p className="mt-2 leading-[1.7] text-[var(--muted)]">{job.details}</p>
+          <ul className="mt-2 list-disc space-y-1 pl-5 leading-[1.7] text-[var(--muted)]">
+            {(Array.isArray(job.details) ? job.details : [job.details]).map((detail) => <li key={detail}>{detail}</li>)}
+          </ul>
         </div>
       ))}
     </section>
