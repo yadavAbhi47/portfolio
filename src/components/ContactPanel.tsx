@@ -26,9 +26,9 @@ export function ContactPanel() {
         <div className="w-full">
           <p className="text-[1.15rem] font-bold leading-[1.5] text-[var(--text)]">Let&apos;s build something that lasts.</p>
           <p className="mt-2.5 leading-[1.7] text-[var(--muted)]">
-            Currently seeking Full-Stack Software Engineering opportunities. Interested in backend systems, cloud-native applications, AI integrations, and scalable web platforms. Feel free to reach out for collaborations or full-time roles.
+            Currently seeking Full-Stack & AI Engineering opportunities. Interested in backend systems, AI integrations, and scalable web platforms. Feel free to reach out for collaborations or full-time roles.
           </p>
-          <p className="mt-2.5 flex flex-wrap items-center gap-1.5 leading-[1.7] text-[var(--muted)]"><FiMapPin className="h-[18px] w-[18px] text-[var(--accent)]" aria-hidden="true" /> Gurugram, Haryana <span className="px-1.5 text-[var(--accent)]" aria-hidden="true">•</span> Open to Remote &amp; On-site</p>
+          <p className="mt-2.5 flex flex-wrap items-center gap-1.5 leading-[1.7] text-[var(--muted)]"><FiMapPin className="h-[18px] w-[18px] text-[var(--accent)]" aria-hidden="true" /> Noida, Uttar Pradesh <span className="px-1.5 text-[var(--accent)]" aria-hidden="true">•</span> Open to Remote &amp; On-site</p>
           <div className="mt-[18px] flex gap-3.5" aria-label="Social links">
             {socialLinks.map((social) => (
               <a key={social.label} className="grid h-14 w-14 place-items-center rounded-xl border border-[var(--border)] bg-[#080a12b3] text-[var(--text)] transition hover:-translate-y-0.5 hover:border-[var(--accent)] hover:text-[var(--accent)]" href={social.href} target="_blank" rel="noreferrer" title={social.label} aria-label={social.label}>

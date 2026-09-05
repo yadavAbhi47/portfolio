@@ -13,7 +13,7 @@ export const navItems: NavItem[] = [
 export const fallbackData: Portfolio = {
   name: 'Abhishek Yadav',
   role: 'Associate Software Engineer Trainee',
-  focus: 'Full-Stack Software Engineering',
+  focus: 'Full-Stack & AI Engineering',
   interests: ['React', 'Microservices', 'API Design', 'AI Workflows', 'Agile Delivery'],
   qualification: 'B.Tech in Computer Science and Engineering',
   status: 'Working on production web applications',
