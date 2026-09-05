@@ -11,7 +11,7 @@ import { fallbackData, getCommandOutput, navItems } from './data'
 function App() {
   const [portfolio] = useState(fallbackData)
   const [theme, setTheme] = useState<'mono' | 'green'>('green')
-  const [activeSection, setActiveSection] = useState('home')
+  const [activeSection, setActiveSection] = useState('about')
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const [command, setCommand] = useState('')
   const [commandOutput, setCommandOutput] = useState<string[]>([])
@@ -59,12 +59,12 @@ function App() {
     }
 
     const commands = getCommandOutput(portfolio)
-    const section = nextCommand === 'about' ? 'home' : nextCommand
+    const section = nextCommand
     const output = commands[nextCommand] ?? `command not found: ${nextCommand}. Try 'help'.`
 
     setCommandOutput((current) => [...current, `$ ${nextCommand}`, output])
     setCommand('')
-    if (['home', 'skills', 'experience', 'projects', 'contact'].includes(section)) {
+    if (['about', 'skills', 'experience', 'projects', 'contact'].includes(section)) {
       handleNavigate(section)
     }
   }

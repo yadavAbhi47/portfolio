@@ -17,7 +17,7 @@ function TerminalLine({ command, children }: { command?: string; children?: Reac
 
 export function ProfileSection({ portfolio }: { portfolio: Portfolio }) {
   return (
-    <div id="home" className="relative mb-6 grid grid-cols-[1.4fr_0.7fr] items-center gap-6 overflow-hidden rounded-[10px] border border-[var(--border)] bg-white/[0.01] p-[56px_22px_22px] shadow-[inset_0_0_20px_rgba(255,255,255,0.015)] max-[820px]:grid-cols-1">
+    <div id="about" className="relative mb-6 grid grid-cols-[1.4fr_0.7fr] items-center gap-6 overflow-hidden rounded-[10px] border border-[var(--border)] bg-white/[0.01] p-[56px_22px_22px] shadow-[inset_0_0_20px_rgba(255,255,255,0.015)] max-[820px]:grid-cols-1">
       <div className="absolute inset-x-0 top-0 flex h-[34px] items-center gap-1.5 border-b border-[var(--border)] bg-white/[0.035] px-[14px]">
         <span className="h-2 w-2 rounded-full bg-[#ff5f57]" /><span className="h-2 w-2 rounded-full bg-[#febc2e]" /><span className="h-2 w-2 rounded-full bg-[#28c840]" /><span className="absolute left-1/2 -translate-x-1/2 text-[0.68rem] text-[var(--muted)]">abhishek@portfolio — bash</span>
       </div>
