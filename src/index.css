@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #000000;
+  --text: #ffffff;
+  --muted: #a0a0a0;
+  --border: #444444;
+  --accent: #ffffff;
+  --panel: #0a0a0a;
+  --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  color-scheme: dark;
+  font-family: var(--mono);
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg);
+  color: var(--text);
+}
+
+[data-theme='mono'] {
+  --bg: #000000;
+  --text: #ffffff;
+  --muted: #a0a0a0;
+  --border: #444444;
+  --accent: #ffffff;
+  --panel: #0a0a0a;
+  --portrait-contrast: 1.08;
+}
+
+[data-theme='green'] {
+  --bg: #000000;
+  --text: #00ff41;
+  --muted: #6b8f71;
+  --border: #164a2a;
+  --accent: #00ff41;
+  --panel: #020d07;
+  --portrait-contrast: 1.02;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+pre,
+strong,
+em {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  appearance: none;
+}
